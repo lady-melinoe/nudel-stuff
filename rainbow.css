@@ -1,0 +1,11 @@
+@keyframes hues {
+  from { filter: hue-rotate(0deg); }
+  to { filter: hue-rotate(360deg); }
+}
+
+:root.enable-the-funky-styling {
+  & .grayscale
+  {
+    animation: hues 20s linear infinite !important;
+  }
+}
