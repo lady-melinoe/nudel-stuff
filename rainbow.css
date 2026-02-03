@@ -3,9 +3,24 @@
   to { filter: hue-rotate(360deg); }
 }
 
+@keyframes _nt  {
+  to { background-position: 200% 50%; }
+}
+
 :root.enable-the-funky-styling {
   & .grayscale
   {
     animation: hues 20s linear infinite !important;
+  }
+  
+  & .cm-ySelectionInfo {
+    opacity: 90%;
+    font-family: "Silkscreen", cursive !important;
+    background-image: linear-gradient(
+      hsl(0, 100%, 75%),
+      hsl(360, 100%, 75%)
+    ) !important;
+    background-size: 200% 100% !important;
+    animation: _nt 3s linear infinite !important;
   }
 }
